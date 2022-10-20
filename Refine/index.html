@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refine</title>
+    <meta name="description" content="Refineは企業のブランディング・マーケティング戦略を企画・ご提案させていただきます。">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="/img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+</head>
+
+<body>
+    <!-- ヘッダー---------------- -->
+    <header id="header">
+        <nav>
+            <ul id="page-link">
+                <li><a href="#service">SERVICE</a></li>
+                <li><a href="#works">WORKS</a></li>
+                <li class="none">
+                    <a href="index.html">
+                        <h1 class="logo"><img src="/img/logo.svg" alt="ロゴ"></h1>
+                    </a>
+                </li>
+                <li><a href="#plan">PLAN</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="mask"></div>
+    </header>
+
+    <main>
+        <!-- メイン------------------ -->
+        <div id="main-visual">
+            <div class="flex">
+                <div class="title fadeLeft">
+                    <img src="img/title-img.png" alt="タイトル">
+                </div>
+                <div class="pc-sp fadeRight">
+                    <img src="img/main-pc-sp.png" alt="パソコン/スマートフォン">
+                </div>
+            </div>
+        </div>
+
+        <!-- SERVICE----------------- -->
+        <div id="service">
+            <div class="service-bar">
+                <h2>
+                    <img class="pc" src="img/SERVICE.png" alt="パソコン用バー画像">
+                </h2>
+                <h2>
+                    <img class="sp" src="img/SERVICE SP.png" alt="スマートフォン用バー画像">
+                </h2>
+                <div class="bar-text">
+                    <p>Webサイトのデザイン・制作から、<br> 公開後の運用までサポート。
+                        <br> SNSを利用した集客などについても
+                        <br> ご相談ください。
+                    </p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="service-one js-fadeUp">
+                    <div class="circle">
+                        <p class="service-name">BRANDING</p>
+                        <h3 class="heading">Webサイトを企画から運用まで<br> トータルサポート
+                        </h3>
+                        <p class="text">
+                            起業や新店舗の立ち上げなど、Webサイトが必要であればぜひご相談ください。 ブランディングを手助けするサイトをプロデュースします。
+                        </p>
+                    </div>
+                    <p class="number">1</p>
+                    <img class="branding-img" src="img/branding-img.jpg" alt="ブランディング画像">
+                </div>
+
+                <div class="service-two js-fadeUp">
+                    <div class="circle">
+                        <p class="service-name">MARKETING</p>
+                        <h3 class="heading">マーケティング戦略を<br>分析・提案
+                        </h3>
+                        <p class="text">
+                            ホームページのSEO対策や、<br>SNSでの集客・情報発信などの運用方法をご提案します。
+                        </p>
+                    </div>
+                    <p class="number">2</p>
+                    <img class="marketing-img" src="img/marketing-img.jpg" alt="マーケティング画像">
+                </div>
+
+                <div class="service-three js-fadeUp">
+                    <div class="circle">
+                        <p class="service-name">CONSULTING</p>
+                        <h3 class="heading">専門のマーケターによる<br>コンサルティング
+                        </h3>
+                        <p class="text">
+                            「さらに業績を伸ばしていきたい」<br>「新店舗の立ち上げで失敗したくない」など、お悩みのときはご相談ください。担当のマーケターが徹底分析し、最善策をご提案します。</p>
+                    </div>
+                    <p class="number">3</p>
+                    <img class="consulting-img" src="img/consulting-img.jpg" alt="コンサルティング画像">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- WORKS----------- -->
+        <div id="works">
+            <div class="works-bar js-fadeUp">
+                <h2>
+                    <img class="pc" src="img/WORKS.png" alt="パソコン用バー画像">
+                </h2>
+                <h2>
+                    <img class="sp" src="img/WORKS SP.png" alt="スマートフォン用バー画像">
+                </h2>
+
+                <div class="bar-text">
+                    <p>過去にご提案させていただいた<br>制作事例の一部を掲載しています。
+                    </p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="grid js-fadeUp">
+                    <div class="item"><img src="img/works-img1.png" alt="作品例1"></div>
+                    <div class="item"><img src="img/works-img2.png" alt="作品例2"></div>
+                    <div class="item"><img src="img/works-img3.png" alt="作品例3"></div>
+                    <div class="item"><img src="img/works-img4.png" alt="作品例4"></div>
+                    <div class="item"><img src="img/works-img5.png" alt="作品例5"></div>
+                    <div class="item"><img src="img/works-img6.png" alt="作品例6"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PLAN----------- -->
+        <div id="plan">
+            <div class="plan-bar js-fadeUp">
+                <h2>
+                    <img class="pc" src="img/PLAN.png" alt="パソコン用バー画像">
+                </h2>
+                <h2>
+                    <img class="sp" src="img/PLAN SP.png" alt="スマートフォン用バー画像">
+                </h2>
+
+                <div class="bar-text">
+                    <p>掲載しているプランだけでなく、<br> 個別での対応もしております。
+                        <br> お客様に合ったプランの
+                        <br> ご提案をしています。
+                    </p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="case js-fadeUp">
+                    <ul>
+                        <li>
+                            <p class="case-number">CASE.1</p>
+                            <p class="case-title">Webサイト制作と<br>運用サポート</p>
+                            <dl class="price">
+                                <dt>企画・制作費</dt>
+                                <dd>￥200,000</dd>
+                            </dl>
+                            <dl class="price">
+                                <dt>管理運用費</dt>
+                                <dd>￥10,000/月</dd>
+                            </dl>
+                            <img src="img/branding-img.jpg" alt="ケースイメージ画像">
+                        </li>
+                        <li>
+                            <p class="case-number">CASE.2</p>
+                            <p class="case-title">Webサイト制作・運用と<br> マーケティングサポート
+                            </p>
+                            <dl class="price">
+                                <dt>企画・制作費</dt>
+                                <dd>￥200,000</dd>
+                            </dl>
+                            <dl class="price">
+                                <dt>管理運用費</dt>
+                                <dd>￥10,000/月</dd>
+                            </dl>
+                            <dl class="price">
+                                <dt>SNS運用</dt>
+                                <dd>￥100,000/月</dd>
+                            </dl>
+                            <img src="img/marketing-img.jpg" alt="ケースイメージ画像">
+                        </li>
+                        <li>
+                            <p class="case-number">CASE.3</p>
+                            <p class="case-title">制作・マーケティング<br>コンサルのフルサポート</p>
+                            <dl class="price">
+                                <dt>企画・制作費</dt>
+                                <dd>￥200,000</dd>
+                            </dl>
+                            <dl class="price">
+                                <dt>管理運用費</dt>
+                                <dd>￥10,000/月</dd>
+                            </dl>
+                            <dl class="price">
+                                <dt>コンサル</dt>
+                                <dd>￥250,000/月</dd>
+                            </dl>
+                            <img src="img/consulting-img.jpg" alt="ケースイメージ画像">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT---------- -->
+        <div id="contact">
+            <div class="contact-bar js-fadeUp">
+                <h2>
+                    <img class="pc" src="img/CONTACT.png" alt="パソコン用バー画像">
+                </h2>
+                <h2>
+                    <img class="sp" src="img/CONTACT SP.png" alt="スマートフォン用バー画像">
+                </h2>
+                <div class="bar-text">
+                    <p>
+                        気軽にお問合せください。<br> 担当者よりご連絡させていただき、
+                        <br> まずはお客様の状況を
+                        <br> ヒアリングさせていただきます。
+                    </p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="contact-form js-fadeUp">
+                    <p class="discriotion">Webサイト制作などのサービスに関するご依頼・お問い合せを受けつけております。<br>気軽にご相談ください。（
+                        <span class="asterisk">*</span>必須項目）</p>
+
+                    <form action="#" method="post">
+
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        <label for="your-name" class="label">氏名<span class="asterisk">*</span></label>
+                                    </th>
+                                    <td>
+                                        <input id="your-name" class="input" type="text" name="yourname">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label for="company-name" class="label">会社・店舗名</label>
+                                    </th>
+                                    <td>
+                                        <input id="company-name" class="input" type="text" name="yourname">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label for="mail" class="label">メールアドレス<span class="asterisk">*</span></label>
+                                    </th>
+                                    <td>
+                                        <input id="mail" class="input" type="email" name="mail">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label for="comment" class="label">お問い合わせ内容<span class="asterisk">*</span></label>
+                                    </th>
+                                    <td>
+                                        <textarea id="comment" class="input" name="comment"></textarea>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3>個人情報の取り扱いについて</h3>
+                        <div class="privacy">
+                            株式会社Refine（以下，「当社」といいます。）は，本ウェブサイト上で提供するサービス（以下,「本サービス」といいます。）における，ユーザーの個人情報の取扱いについて，以下のとおりプライバシーポリシー（以下，「本ポリシー」といいます。）を定めます。 第1条（個人情報） 「個人情報」とは，個人情報保護法にいう「個人情報」を指すものとし，生存する個人に関する情報であって，当該情報に含まれる氏名，生年月日，住所，電話番号，連絡先その他の記述等により特定の個人を識別できる情報及び容貌，指紋，声紋にかかるデータ，及び健康保険証の保険者番号などの当該情報単体から特定の個人を識別できる情報（個人識別情報）を指します。
+                            第2条（個人情報の収集方法） 当社は，ユーザーが利用登録をする際に氏名，生年月日，住所，電話番号，メールアドレス，銀行口座番号，クレジットカード番号，運転免許証番号などの個人情報をお尋ねすることがあります。また，ユーザーと提携先などとの間でなされたユーザーの個人情報を含む取引記録や決済に関する情報を,当社の提携先（情報提供元，広告主，広告配信先などを含みます。以下，｢提携先｣といいます。）などから収集することがあります。 第3条（個人情報を収集・利用する目的）
+                            当社が個人情報を収集・利用する目的は，以下のとおりです。 当社サービスの提供・運営のため ユーザーからのお問い合わせに回答するため（本人確認を行うことを含む） ユーザーが利用中のサービスの新機能，更新情報，キャンペーン等及び当社が提供する他のサービスの案内のメールを送付するため メンテナンス，重要なお知らせなど必要に応じたご連絡のため 利用規約に違反したユーザーや，不正・不当な目的でサービスを利用しようとするユーザーの特定をし，ご利用をお断りするため
+                            ユーザーにご自身の登録情報の閲覧や変更，削除，ご利用状況の閲覧を行っていただくため 有料サービスにおいて，ユーザーに利用料金を請求するため 上記の利用目的に付随する目的 第4条（利用目的の変更） 当社は，利用目的が変更前と関連性を有すると合理的に認められる場合に限り，個人情報の利用目的を変更するものとします。 利用目的の変更を行った場合には，変更後の目的について，当社所定の方法により，ユーザーに通知し，または本ウェブサイト上に公表するものとします。
+                            第5条（個人情報の第三者提供） 当社は，次に掲げる場合を除いて，あらかじめユーザーの同意を得ることなく，第三者に個人情報を提供することはありません。ただし，個人情報保護法その他の法令で認められる場合を除きます。 人の生命，身体または財産の保護のために必要がある場合であって，本人の同意を得ることが困難であるとき 公衆衛生の向上または児童の健全な育成の推進のために特に必要がある場合であって，本人の同意を得ることが困難であるとき 国の機関もしくは地方公共団体またはその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合であって，本人の同意を得ることにより当該事務の遂行に支障を及ぼすおそれがあるとき
+                            予め次の事項を告知あるいは公表し，かつ当社が個人情報保護委員会に届出をしたとき 利用目的に第三者への提供を含むこと 第三者に提供されるデータの項目 第三者への提供の手段または方法 本人の求めに応じて個人情報の第三者への提供を停止すること 本人の求めを受け付ける方法 前項の定めにかかわらず，次に掲げる場合には，当該情報の提供先は第三者に該当しないものとします。 当社が利用目的の達成に必要な範囲内において個人情報の取扱いの全部または一部を委託する場合
+                            合併その他の事由による事業の承継に伴って個人情報が提供される場合 個人情報を特定の者との間で共同して利用する場合であって，その旨並びに共同して利用される個人情報の項目，共同して利用する者の範囲，利用する者の利用目的および当該個人情報の管理について責任を有する者の氏名または名称について，あらかじめ本人に通知し，または本人が容易に知り得る状態に置いた場合 第6条（個人情報の開示） 当社は，本人から個人情報の開示を求められたときは，本人に対し，遅滞なくこれを開示します。ただし，開示することにより次のいずれかに該当する場合は，その全部または一部を開示しないこともあり，開示しない決定をした場合には，その旨を遅滞なく通知します。なお，個人情報の開示に際しては，1件あたり1，000円の手数料を申し受けます。
+                            本人または第三者の生命，身体，財産その他の権利利益を害するおそれがある場合 当社の業務の適正な実施に著しい支障を及ぼすおそれがある場合 その他法令に違反することとなる場合 前項の定めにかかわらず，履歴情報および特性情報などの個人情報以外の情報については，原則として開示いたしません。 第7条（個人情報の訂正および削除） ユーザーは，当社の保有する自己の個人情報が誤った情報である場合には，当社が定める手続きにより，当社に対して個人情報の訂正，追加または削除（以下，「訂正等」といいます。）を請求することができます。
+                            当社は，ユーザーから前項の請求を受けてその請求に応じる必要があると判断した場合には，遅滞なく，当該個人情報の訂正等を行うものとします。 当社は，前項の規定に基づき訂正等を行った場合，または訂正等を行わない旨の決定をしたときは遅滞なく，これをユーザーに通知します。 第8条（個人情報の利用停止等） 当社は，本人から，個人情報が，利用目的の範囲を超えて取り扱われているという理由，または不正の手段により取得されたものであるという理由により，その利用の停止または消去（以下，「利用停止等」といいます。）を求められた場合には，遅滞なく必要な調査を行います。
+                            前項の調査結果に基づき，その請求に応じる必要があると判断した場合には，遅滞なく，当該個人情報の利用停止等を行います。 当社は，前項の規定に基づき利用停止等を行った場合，または利用停止等を行わない旨の決定をしたときは，遅滞なく，これをユーザーに通知します。 前2項にかかわらず，利用停止等に多額の費用を有する場合その他利用停止等を行うことが困難な場合であって，ユーザーの権利利益を保護するために必要なこれに代わるべき措置をとれる場合は，この代替策を講じるものとします。
+                            第9条（プライバシーポリシーの変更） 本ポリシーの内容は，法令その他本ポリシーに別段の定めのある事項を除いて，ユーザーに通知することなく，変更することができるものとします。 当社が別途定める場合を除いて，変更後のプライバシーポリシーは，本ウェブサイトに掲載したときから効力を生じるものとします。 第10条（お問い合わせ窓口） 本ポリシーに関するお問い合わせは，下記の窓口までお願いいたします。<br>住所：岡山県岡山市北区<br>社名：株式会社Refine<br>                            Eメールアドレス：aiueo@gmail.com
+                        </div>
+
+                        <div class="consent-wrap">
+                            <input id="consent" type="checkbox" name="consent" value="同意">
+                            <label for="consent" class="checkbox02">「個人情報のお取り扱いについて」に同意します</label>
+                        </div>
+
+                        <input class="btn" type="submit" value="送　信">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <p class="address">
+            株式会社Refine<br> 〒700-0024 岡山県岡山市北区駅元町１−１<br> TEL : 086-0000-1111　/　FAX : 086-0000-1111
+        </p>
+        <p class="copy">&copy; Refine</p>
+    </footer>
+</body>
+
+</html>
