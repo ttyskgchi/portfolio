@@ -1,0 +1,674 @@
+@charset "UTF-8";
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #333;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+.content {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 10%;
+}
+
+
+/* 共通サブタイトル */
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 50px;
+    position: relative;
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    transform: translate(-50%);
+    background-color: #333;
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+h3::before,
+h3::after {
+    content: '';
+    flex-grow: 0.04;
+    height: 1px;
+    background: #333;
+    margin: 4px 8px 0 8px;
+}
+
+
+/* 共通ボタン */
+
+.btn {
+    background-color: #E8AF00;
+    border-bottom: 6px solid #684e00;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.25rem;
+    display: block;
+    padding: 15px 35px;
+    text-align: center;
+    transition: 0.3s;
+    position: relative;
+}
+
+.btn::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 38%;
+    right: 30px;
+    border-top: solid 3px #fff;
+    border-right: solid 3px #fff;
+    transform: rotate(45deg);
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+
+/* ヘッダー------- */
+
+.logo {
+    width: 350px;
+}
+
+.icon {
+    width: 25px;
+    vertical-align: sub;
+}
+
+.tel {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.tel a {
+    color: #7084FF;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+}
+
+#navi ul {
+    display: flex;
+    background-color: #E8AF00;
+}
+
+#navi ul a {
+    color: #fff;
+}
+
+#navi ul a li:hover {
+    opacity: 0.7;
+}
+
+#navi ul a {
+    padding: 0 20px;
+    border-right: #fff solid 1px;
+}
+
+#navi ul a:last-child {
+    border-right: none;
+}
+
+.hamburger,
+.hamburger span {
+    display: none;
+}
+
+#mask {
+    display: none;
+}
+
+
+/* メインビジュアル------ */
+
+#main-visual {
+    height: 850px;
+    position: relative;
+}
+
+#main-visual .text {
+    position: absolute;
+    top: 280px;
+    left: 10%;
+    z-index: 10;
+}
+
+#main-visual .text p {
+    font-size: 2.5rem;
+    text-shadow: 0 4px 6px #fff;
+}
+
+
+/* fade------------------ */
+
+#main-visual .fade li {
+    width: 75%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    animation: fade 15s infinite;
+}
+
+#main-visual .fade li:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#main-visual .fade li:nth-child(2) {
+    animation-delay: 5s;
+}
+
+#main-visual .fade li:nth-child(3) {
+    animation-delay: 10s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    45% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#main-visual .fade li img {
+    width: 100%;
+    height: 720px;
+    object-fit: cover;
+}
+
+#main-visual .fade li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: inset 0px 0px 20px 20px #fff;
+}
+
+
+/* よつ葉の里紹介---------------------- */
+
+#info {
+    background-color: rgba(232, 175, 0, 0.5);
+    padding-bottom: 80px;
+}
+
+#info .content .flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+#info .content .flex .info-text {
+    width: 47%;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+#info .content .flex .visu-img {
+    width: 47%;
+    padding-top: 7px;
+}
+
+
+/* 問い合わせ-------- */
+
+#contact {
+    background-color: #fff;
+    margin-top: 80px;
+}
+
+#contact .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 10%;
+}
+
+#contact .container .wrapLeft {
+    width: 47%;
+    text-align: center;
+}
+
+#contact .container .wrapLeft>div {
+    background-color: #e8ae0049;
+    height: 500px;
+    border-radius: 10px;
+    padding: 50px 10%;
+    font-size: 1.5rem;
+}
+
+#contact .container .wrapLeft .tel {
+    color: #7084FF;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+#contact .container .wrapLeft .net {
+    margin-top: 50px;
+}
+
+#contact .container .wrapLeft .btn {
+    max-width: 250px;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+#contact .container .wrapRight {
+    width: 47%;
+}
+
+#contact .container .wrapRight dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact .container .wrapRight dt {
+    width: 40%;
+    border-bottom: 1px solid #333;
+    margin-bottom: 10px;
+}
+
+#contact .container .wrapRight dd {
+    width: 60%;
+    border-bottom: 1px solid #333;
+    margin-bottom: 10px;
+}
+
+
+/* 施設の特徴-------------- */
+
+.img-text {
+    display: flex;
+}
+
+.img-text img {
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 40px;
+}
+
+.feat-top,
+.feat-bottom {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.feat-content {
+    margin-top: 60px;
+}
+
+.feat-right {
+    margin-left: 20px;
+}
+
+.feat-content h4 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+
+.feat-content .stripe {
+    position: relative;
+}
+
+.feat-content .stripe:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 7px;
+    background: repeating-linear-gradient(-45deg, #7084FF, #7084FF 2px, white 2px, white 4px);
+}
+
+.feat-content .img-text p {
+    max-width: 200px;
+}
+
+
+/* 下部申し込みボタン------- */
+
+#btn-area {
+    background-color: #e8ae0049;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 1.75rem;
+    padding: 40px 0;
+}
+
+#btn-area p:nth-of-type(2) {
+    font-size: 1.3rem;
+}
+
+#btn-area .btn {
+    max-width: 800px;
+    margin: 20px auto 0 auto;
+}
+
+
+/* フッター--------- */
+
+#to-top {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: solid 1px #333;
+    border-radius: 50%;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+}
+
+#to-top::after {
+    content: "";
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #333;
+    position: absolute;
+    left: 17px;
+    bottom: 20px;
+}
+
+footer ul {
+    display: flex;
+    margin: 80px 0;
+    justify-content: center;
+}
+
+footer li {
+    border-right: 1px solid #333;
+    padding: 0 20px;
+}
+
+footer li:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+footer a:hover {
+    opacity: 0.7;
+}
+
+footer .copyright {
+    text-align: center;
+    font-size: 0.5rem;
+    margin-bottom: 20px;
+}
+
+
+/* SP--------------------- */
+
+@media (max-width: 921px) {
+    /* 共通 */
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    /* ヘッダー */
+    .logo {
+        width: 200px;
+    }
+    .tel {
+        text-align: start;
+        padding-left: 3%;
+    }
+    .tel a {
+        font-size: 1.2rem;
+    }
+    #header {
+        flex-direction: column;
+        padding: 0 1%;
+        align-items: stretch;
+        position: relative;
+    }
+    #navi ul {
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: -120%;
+        z-index: 10;
+        transition: 0.5s;
+    }
+    .open #navi ul {
+        right: 0;
+        z-index: 30;
+    }
+    #navi ul li {
+        border-right: none;
+        padding: 0;
+        text-align: center;
+    }
+    #navi ul a {
+        border-right: none;
+    }
+    /* ハンバーガーメニュー */
+    .hamburger {
+        display: block;
+        width: 75px;
+        height: 75px;
+        cursor: pointer;
+        background-color: #E8AF00;
+        position: fixed;
+        top: 0;
+        right: 0;
+        transition: 0.5s;
+        z-index: 30;
+    }
+    .hamburger span {
+        width: 35px;
+        height: 2px;
+        background-color: #fff;
+        border-radius: 4px;
+        display: block;
+        position: absolute;
+        left: 21px;
+        transition: 0.5s;
+    }
+    .hamburger span:nth-child(1) {
+        top: 26px;
+    }
+    .hamburger span:nth-child(2) {
+        top: 37px;
+    }
+    .hamburger span:nth-child(3) {
+        top: 48px;
+    }
+    .open .hamburger span {
+        background-color: #fff;
+    }
+    .open .hamburger span:nth-child(1) {
+        transform: translateY(11px) rotate(-315deg);
+    }
+    .open .hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+    .open .hamburger span:nth-child(3) {
+        transform: translateY(-11px) rotate(315deg);
+    }
+    #mask {
+        display: none;
+        transition: 0.5s;
+    }
+    .open #mask {
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        cursor: pointer;
+        display: block;
+        opacity: 0.8;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 20;
+    }
+    /* メインビジュアル */
+    #main-visual {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 500px;
+    }
+    #main-visual .text {
+        width: calc(100% - 32px);
+        top: 310px;
+        left: 16px;
+    }
+    #main-visual .text p {
+        font-size: 1.8rem;
+        line-height: 150%;
+        margin-bottom: 10px;
+    }
+    #main-visual .fade li {
+        width: 100%;
+    }
+    #main-visual .fade li img {
+        height: 300px;
+    }
+    /* よつ葉の里紹介 */
+    #info {
+        margin-top: 80px;
+    }
+    #info .content .flex {
+        flex-direction: column-reverse;
+        margin-top: 30px;
+    }
+    #info .content .flex .info-text {
+        width: 100%;
+        margin-top: 20px;
+    }
+    #info .content .flex .visu-img {
+        width: 100%;
+    }
+    .menu a::after {
+        display: none;
+    }
+    /* お問い合わせ */
+    #contact .container {
+        flex-direction: column;
+        padding: 20px 10% 0 10%;
+    }
+    #contact .container .wrapLeft {
+        width: 100%;
+    }
+    #contact .container .wrapLeft .tel {
+        font-size: 1.2rem;
+    }
+    #contact .container .wrapLeft>div {
+        height: auto;
+        padding: 10px 1% 30px 1%;
+    }
+    #contact .container .wrapLeft .btn {
+        max-width: 90%;
+    }
+    #contact .container .wrapLeft .btn::after {
+        display: none;
+    }
+    #contact .container .wrapLeft .net {
+        margin-top: 30px;
+    }
+    #contact .container .wrapRight {
+        width: 100%;
+        margin-top: 20px;
+    }
+    #contact .container .wrapRight dl {
+        font-size: 0.6rem;
+    }
+    /* よつ葉の里の特徴 */
+    .img-text {
+        flex-direction: column;
+    }
+    .img-text img {
+        margin: 0 auto;
+    }
+    .img-text p {
+        margin: 0 auto;
+    }
+    .feat-top,
+    .feat-bottom {
+        flex-direction: column;
+    }
+    /* 下部ボタン */
+    #btn-area {
+        padding: 20px 10%;
+        font-size: 1.5rem;
+    }
+    #btn-area .btn {
+        font-size: 1rem;
+    }
+    #btn-area .btn::after {
+        display: none;
+    }
+    /* フッター */
+    footer ul {
+        flex-direction: column;
+        margin: 50px auto;
+    }
+    footer li {
+        border-right: none;
+        border-bottom: 1px solid #333;
+        padding: 10px 0 0 0;
+    }
+}
