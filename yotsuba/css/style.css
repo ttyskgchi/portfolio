@@ -1,6 +1,13 @@
 @charset "UTF-8";
+
 html {
     font-size: 100%;
+    visibility: hidden;
+}
+
+html.wf-active,
+html.loading-delay {
+    visibility: visible;
 }
 
 body {
@@ -29,6 +36,11 @@ a {
     max-width: 1500px;
     margin: 0 auto;
     padding: 0 10%;
+}
+
+.back-img {
+    background-image: url(/img/back-img.png);
+    background-repeat: repeat-y;
 }
 
 
@@ -211,15 +223,19 @@ h3::after {
     0% {
         opacity: 0;
     }
+
     15% {
         opacity: 1;
     }
+
     30% {
         opacity: 1;
     }
+
     45% {
         opacity: 0;
     }
+
     100% {
         opacity: 0;
     }
@@ -249,21 +265,22 @@ h3::after {
     padding-bottom: 80px;
 }
 
-#info .content .flex {
-    display: flex;
-    justify-content: space-between;
+#info .content .info-wrap {
     margin-top: 70px;
+    position: relative;
 }
 
-#info .content .flex .info-text {
-    width: 47%;
-    font-weight: normal;
-    font-size: 1.2rem;
+#info .content .info-wrap .visu-img {
+    width: 85%;
 }
 
-#info .content .flex .visu-img {
-    width: 47%;
-    padding-top: 7px;
+#info .content .info-wrap .info-text {
+    width: 50%;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: -10%;
+    right: 0;
 }
 
 
@@ -271,7 +288,7 @@ h3::after {
 
 #contact {
     background-color: #fff;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 #contact .container {
@@ -305,7 +322,7 @@ h3::after {
 
 #contact .container .wrapLeft .btn {
     max-width: 250px;
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
     font-size: 1rem;
 }
 
@@ -457,33 +474,41 @@ footer .copyright {
 /* SP--------------------- */
 
 @media (max-width: 921px) {
+
     /* 共通 */
     h2 {
         font-size: 1.5rem;
     }
+
     h3 {
         font-size: 1.2rem;
     }
+
     h4 {
         font-size: 1rem;
     }
+
     /* ヘッダー */
     .logo {
         width: 200px;
     }
+
     .tel {
         text-align: start;
         padding-left: 3%;
     }
+
     .tel a {
         font-size: 1.2rem;
     }
+
     #header {
         flex-direction: column;
         padding: 0 1%;
         align-items: stretch;
         position: relative;
     }
+
     #navi ul {
         display: block;
         width: 100%;
@@ -493,18 +518,22 @@ footer .copyright {
         z-index: 10;
         transition: 0.5s;
     }
+
     .open #navi ul {
         right: 0;
         z-index: 30;
     }
+
     #navi ul li {
         border-right: none;
         padding: 0;
         text-align: center;
     }
+
     #navi ul a {
         border-right: none;
     }
+
     /* ハンバーガーメニュー */
     .hamburger {
         display: block;
@@ -518,6 +547,7 @@ footer .copyright {
         transition: 0.5s;
         z-index: 30;
     }
+
     .hamburger span {
         width: 35px;
         height: 2px;
@@ -528,31 +558,40 @@ footer .copyright {
         left: 21px;
         transition: 0.5s;
     }
+
     .hamburger span:nth-child(1) {
         top: 26px;
     }
+
     .hamburger span:nth-child(2) {
         top: 37px;
     }
+
     .hamburger span:nth-child(3) {
         top: 48px;
     }
+
     .open .hamburger span {
         background-color: #fff;
     }
+
     .open .hamburger span:nth-child(1) {
         transform: translateY(11px) rotate(-315deg);
     }
+
     .open .hamburger span:nth-child(2) {
         opacity: 0;
     }
+
     .open .hamburger span:nth-child(3) {
         transform: translateY(-11px) rotate(315deg);
     }
+
     #mask {
         display: none;
         transition: 0.5s;
     }
+
     .open #mask {
         width: 100%;
         height: 100%;
@@ -565,107 +604,135 @@ footer .copyright {
         left: 0;
         z-index: 20;
     }
+
     /* メインビジュアル */
     #main-visual {
         display: flex;
         flex-direction: column-reverse;
         height: 500px;
     }
+
     #main-visual .text {
         width: calc(100% - 32px);
         top: 310px;
         left: 16px;
     }
+
     #main-visual .text p {
         font-size: 1.8rem;
         line-height: 150%;
         margin-bottom: 10px;
     }
+
     #main-visual .fade li {
         width: 100%;
     }
+
     #main-visual .fade li img {
         height: 300px;
     }
+
     /* よつ葉の里紹介 */
     #info {
         margin-top: 80px;
     }
-    #info .content .flex {
-        flex-direction: column-reverse;
+
+    #info .content .info-wrap {
         margin-top: 30px;
     }
-    #info .content .flex .info-text {
+
+    #info .content .info-wrap .visu-img {
         width: 100%;
+    }
+
+    #info .content .info-wrap .info-text {
+        width: 100%;
+        position: static;
         margin-top: 20px;
     }
-    #info .content .flex .visu-img {
-        width: 100%;
-    }
+
     .menu a::after {
         display: none;
     }
+
     /* お問い合わせ */
     #contact .container {
         flex-direction: column;
         padding: 20px 10% 0 10%;
     }
+
     #contact .container .wrapLeft {
         width: 100%;
     }
+
     #contact .container .wrapLeft .tel {
         font-size: 1.2rem;
     }
+
     #contact .container .wrapLeft>div {
         height: auto;
         padding: 10px 1% 30px 1%;
     }
+
     #contact .container .wrapLeft .btn {
         max-width: 90%;
     }
+
     #contact .container .wrapLeft .btn::after {
         display: none;
     }
+
     #contact .container .wrapLeft .net {
         margin-top: 30px;
     }
+
     #contact .container .wrapRight {
         width: 100%;
         margin-top: 20px;
     }
+
     #contact .container .wrapRight dl {
         font-size: 0.6rem;
     }
+
     /* よつ葉の里の特徴 */
     .img-text {
         flex-direction: column;
     }
+
     .img-text img {
         margin: 0 auto;
     }
+
     .img-text p {
         margin: 0 auto;
     }
+
     .feat-top,
     .feat-bottom {
         flex-direction: column;
     }
+
     /* 下部ボタン */
     #btn-area {
         padding: 20px 10%;
         font-size: 1.5rem;
     }
+
     #btn-area .btn {
         font-size: 1rem;
     }
+
     #btn-area .btn::after {
         display: none;
     }
+
     /* フッター */
     footer ul {
         flex-direction: column;
         margin: 50px auto;
     }
+
     footer li {
         border-right: none;
         border-bottom: 1px solid #333;

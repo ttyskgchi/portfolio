@@ -15,14 +15,14 @@
 
     <script>
         // フォント指定
-        (function(d) {
+        (function (d) {
             var config = {
-                    kitId: 'klb5jns',
-                    scriptTimeout: 3000,
-                    async: true
-                },
+                kitId: 'klb5jns',
+                scriptTimeout: 3000,
+                async: true
+            },
                 h = d.documentElement,
-                t = setTimeout(function() {
+                t = setTimeout(function () {
                     h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
                 }, config.scriptTimeout),
                 tk = d.createElement("script"),
@@ -32,14 +32,14 @@
             h.className += " wf-loading";
             tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
             tk.async = true;
-            tk.onload = tk.onreadystatechange = function() {
+            tk.onload = tk.onreadystatechange = function () {
                 a = this.readyState;
                 if (f || a && a != "complete" && a != "loaded") return;
                 f = true;
                 clearTimeout(t);
                 try {
                     Typekit.load(config)
-                } catch (e) {}
+                } catch (e) { }
             };
             s.parentNode.insertBefore(tk, s)
         })(document);
@@ -82,134 +82,140 @@
     </header>
 
     <main>
-        <!-- メインビジュアル -->
-        <div id="main-visual">
-            <div class="text">
-                <p>家族といるような<br>あたたかい生活を</p>
-                <a class="btn" href="#">無料相談はこちら</a>
-            </div>
-            <ul class="fade">
-                <li><img src="img/main-visual1.jpg" alt="メインビジュアル"></li>
-                <li><img src="img/main-visual2.jpg" alt="メインビジュアル"></li>
-                <li><img src="img/main-visual3.jpg" alt="メインビジュアル"></li>
-            </ul>
-        </div>
-
-        <!-- よつ葉の里紹介 -->
-        <div id="info">
-            <div class="content">
-                <h2>よつ葉の里</h2>
-                <div class="flex">
-                    <div class="info-text">
-                        <p>
-                            よつ葉の里はご利用者様が安心して暮らせるよう、『家族といるようなあたたかい生活を送れる場』をコンセプトとして掲げています。<br>また、日常生活に必要な医療・看護・介護・福祉の充実したサポートに加え、経験豊富な明るいスタッフたちが居心地の良い雰囲気作りを行っていますので、ご利用者様やご家族様に安心してご利用いただけます。
-                        </p>
-                    </div>
-                    <div class="visu-img">
-                        <img src="img/visual.jpg" alt="建物外観">
-                    </div>
+        <div class="back-img">
+            <!-- メインビジュアル -->
+            <div id="main-visual">
+                <div class="text">
+                    <p>家族といるような<br>あたたかい生活を</p>
+                    <a class="btn" href="#">無料相談はこちら</a>
                 </div>
-                <!-- お問い合わせ -->
-                <div id="contact">
-                    <div class="container">
-                        <div class="wrapLeft">
-                            <h3>お問い合わせ</h3>
+                <ul class="fade">
+                    <li><img src="img/main-visual1.jpg" alt="メインビジュアル"></li>
+                    <li><img src="img/main-visual2.jpg" alt="メインビジュアル"></li>
+                    <li><img src="img/main-visual3.jpg" alt="メインビジュアル"></li>
+                </ul>
+            </div>
 
-                            <div>
-                                <h4>Tel</h4>
-                                <a class="tel" href="tel:"><img class="icon" src="img/Phone.png" alt="phoneIcon">086-111-2222</a>
-                                <div class="net">
-                                    <h4>インターネットで<br>お問い合わせ</h4>
-                                    <a class="btn" href="#">無料相談はこちら</a>
+            <!-- よつ葉の里紹介 -->
+            <div id="info">
+                <div class="content">
+                    <h2>よつ葉の里</h2>
+                    <div class="info-wrap">
+                        <div class="visu-img">
+                            <img src="img/visual.jpg" alt="建物外観">
+                        </div>
+                        <div class="info-text">
+                            <p>
+                                よつ葉の里はご利用者様が安心して暮らせるよう、『家族といるようなあたたかい生活を送れる場』をコンセプトとして掲げています。<br>また、日常生活に必要な医療・看護・介護・福祉の充実したサポートに加え、経験豊富な明るいスタッフたちが居心地の良い雰囲気作りを行っていますので、ご利用者様やご家族様に安心してご利用いただけます。
+                            </p>
+                        </div>
+
+                    </div>
+                    <!-- お問い合わせ -->
+                    <div id="contact">
+                        <div class="container">
+                            <div class="wrapLeft">
+                                <h3>お問い合わせ</h3>
+
+                                <div>
+                                    <h4>Tel</h4>
+                                    <a class="tel" href="tel:"><img class="icon" src="img/Phone.png"
+                                            alt="phoneIcon">086-111-2222</a>
+                                    <div class="net">
+                                        <h4>インターネットで<br>お問い合わせ</h4>
+                                        <a class="btn" href="#">無料相談はこちら</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wrapRight">
+                                <h3>アクセス</h3>
+
+                                <div>
+                                    <div class="map">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.547634292476!2d133.91553945008695!3d34.6661255924824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554064c3de389d3%3A0xa2d703aa2239cf57!2z5bKh5bGx6aeF!5e0!3m2!1sja!2sjp!4v1638877849880!5m2!1sja!2sjp"
+                                            width="100%" height="300" style="border:0;" allowfullscreen=""
+                                            loading="lazy"></iframe>
+                                    </div>
+                                    <dl>
+                                        <dt>所在地</dt>
+                                        <dd>岡山市北区駅元町</dd>
+                                        <dt>電話番号</dt>
+                                        <dd>086-111-2222</dd>
+                                        <dt>規模・構造</dt>
+                                        <dd>鉄骨造／地上3階建</dd>
+                                        <dt>面積</dt>
+                                        <dd>敷地面積1200㎡</dd>
+                                        <dt>居室概要</dt>
+                                        <dd>居室20部屋</dd>
+                                        <dt>共用施設・設備</dt>
+                                        <dd>エントランスロビー、食堂、浴室（個浴・特浴）他</dd>
+                                    </dl>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="wrapRight">
-                            <h3>アクセス</h3>
+                </div>
+            </div>
 
-                            <div>
-                                <div class="map">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.547634292476!2d133.91553945008695!3d34.6661255924824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554064c3de389d3%3A0xa2d703aa2239cf57!2z5bKh5bGx6aeF!5e0!3m2!1sja!2sjp!4v1638877849880!5m2!1sja!2sjp"
-                                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                                </div>
-                                <dl>
-                                    <dt>所在地</dt>
-                                    <dd>岡山市北区駅元町</dd>
-                                    <dt>電話番号</dt>
-                                    <dd>086-111-2222</dd>
-                                    <dt>規模・構造</dt>
-                                    <dd>鉄骨造／地上3階建</dd>
-                                    <dt>面積</dt>
-                                    <dd>敷地面積1200㎡</dd>
-                                    <dt>居室概要</dt>
-                                    <dd>居室20部屋</dd>
-                                    <dt>共用施設・設備</dt>
-                                    <dd>エントランスロビー、食堂、浴室（個浴・特浴）他</dd>
-                                </dl>
-                            </div>
+            <!-- よつ葉の里の特徴 -->
+            <div id="feature" class="content">
+                <h2>よつ葉の里の特徴</h2>
+
+                <div class="feat-top">
+                    <div class="feat-content">
+                        <h4 class="stripe">24時間介護スタッフ常駐</h4>
+                        <div class="img-text">
+                            <img src="img/human1.jpg" alt="人物画像">
+                            <p>
+                                24時間365日スタッフが常駐していますので、日々の生活はもちろん、緊急時にも即時対応が可能です。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feat-content feat-right">
+                        <h4 class="stripe">充実の介護サービス</h4>
+                        <div class="img-text">
+                            <img src="img/bath.jpg" alt="浴室画像">
+                            <p>
+                                自立から要介護5までご利用者様に合ったサービスを受けることができます。生活の中でご不安な点がございましたら、都度ご相談ください。
+                            </p>
                         </div>
                     </div>
                 </div>
 
-            </div>
-        </div>
-
-        <!-- よつ葉の里の特徴 -->
-        <div id="feature" class="content">
-            <h2>よつ葉の里の特徴</h2>
-
-            <div class="feat-top">
-                <div class="feat-content">
-                    <h4 class="stripe">24時間介護スタッフ常駐</h4>
-                    <div class="img-text">
-                        <img src="img/human1.jpg" alt="人物画像">
-                        <p>
-                            24時間365日スタッフが常駐していますので、日々の生活はもちろん、緊急時にも即時対応が可能です。
-                        </p>
+                <div class="feat-bottom">
+                    <div class="feat-content">
+                        <h4 class="stripe">看護師の配置</h4>
+                        <div class="img-text">
+                            <img src="img/human2.jpg" alt="人物画像">
+                            <p>
+                                看護師が毎日常駐していますので健康相談やバイタルチェック、お薬の管理など対応可能です。医療処置が日々必要な方もぜひご相談ください。
+                            </p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="feat-content feat-right">
-                    <h4 class="stripe">充実の介護サービス</h4>
-                    <div class="img-text">
-                        <img src="img/bath.jpg" alt="浴室画像">
-                        <p>
-                            自立から要介護5までご利用者様に合ったサービスを受けることができます。生活の中でご不安な点がございましたら、都度ご相談ください。
-                        </p>
+                    <div class="feat-content feat-right">
+                        <h4 class="stripe">安心快適な生活支援サービス</h4>
+                        <div class="img-text">
+                            <img src="img/dayroom.jpg" alt="デイルーム画像">
+                            <p>
+                                日々の生活でご不便を感じていることがあれば、気軽にご相談ください。より快適に暮らしていただくためにサポートいたします。
+                            </p>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
-            <div class="feat-bottom">
-                <div class="feat-content">
-                    <h4 class="stripe">看護師の配置</h4>
-                    <div class="img-text">
-                        <img src="img/human2.jpg" alt="人物画像">
-                        <p>
-                            看護師が毎日常駐していますので健康相談やバイタルチェック、お薬の管理など対応可能です。医療処置が日々必要な方もぜひご相談ください。
-                        </p>
-                    </div>
-                </div>
-
-                <div class="feat-content feat-right">
-                    <h4 class="stripe">安心快適な生活支援サービス</h4>
-                    <div class="img-text">
-                        <img src="img/dayroom.jpg" alt="デイルーム画像">
-                        <p>
-                            日々の生活でご不便を感じていることがあれば、気軽にご相談ください。より快適に暮らしていただくためにサポートいたします。
-                        </p>
-                    </div>
-                </div>
-
+            <!-- 下部ボタン -->
+            <div id="btn-area">
+                <p>まずは気軽にご相談ください</p>
+                <p>ご見学も随時受付中！</p>
+                <a class="btn" href="#">無料相談・見学に申し込む</a>
             </div>
-        </div>
-
-        <!-- 下部ボタン -->
-        <div id="btn-area">
-            <p>まずは気軽にご相談ください</p>
-            <p>ご見学も随時受付中！</p>
-            <a class="btn" href="#">無料相談・見学に申し込む</a>
         </div>
     </main>
 
